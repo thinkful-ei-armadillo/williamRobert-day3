@@ -54,4 +54,53 @@ function keyDeleter(obj) {
 
 keyDeleter(obj);
 
+// Object drills 2
+
+function makeStudentReport(data) {
+    const results = [];
+    for (let i in data) {
+        const student = data[i];
+        results.push(`${student.name}: ${student.grade}`);
+    }
+    return results;
+}
+
+const data = [
+    { name: 'Jane Doe', grade: 'A' },
+    { name: 'John Dough', grade: 'B' },
+    { name: 'Jill Do', grade: 'A' },
+  ];
+
+// console.log(makeStudentReport(data));
+
+const studentData = [
+    {
+      name: 'Tim',
+      status: 'Current student',
+      course: 'Biology',
+    },
+    {
+      name: 'Sue',
+      status: 'Withdrawn',
+      course: 'Mathematics',
+    },
+    {
+      name: 'Liz',
+      status: 'On leave',
+      course: 'Computer science',
+    },
+  ];
+
+function enrollInSummerSchool(students) {
+    const results = [];
+    for (let i in students) {
+        const student = students[i];
+        student.status = 'In Summer School';
+    }
+    return students;
+}
+
+// console.log(enrollInSummerSchool(studentData));
+
+
 
