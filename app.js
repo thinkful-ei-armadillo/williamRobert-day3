@@ -148,5 +148,41 @@ console.log(validateKeys(objectA, 3));
 */
 
 
+// New object drills
+
+// 1. Objects initializers and methods
+
+const loaf = {
+  flour: 300,
+  water: 210,
+  hydration: function() {
+    return (loaf.water / loaf.flour) * 100;
+  }
+};
+
+// console.log(loaf.hydration());
+// console.log(loaf);
+
+// 2. Iterating over an object's properties
+
+const newObj = {
+  foo: 1,
+  bar: 'cat',
+  fum: 42,
+  quux: 'dog',
+  spam: 'rice'
+};
+
+for (let i in newObj) {
+  console.log(i, newObj[i]);
+}
+
+// ended morning session.
+
+
+
+
+
+
 
 
