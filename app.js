@@ -178,8 +178,29 @@ for (let i in newObj) {
 }
 
 // ended morning session.
+// 3. Arrays in objects
 
+const hobbit = {
+  meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+};
 
+console.log(hobbit.meals[3]);
+
+// 4. Arrays of objects
+
+function createDude(name, jobTitle) {
+  return {
+    name,
+    jobTitle,
+  };
+}
+
+const will = createDude('Will', 'Student');
+const bob = createDude('Bob', 'Student');
+const rich = createDude('Rich', 'Instructor');
+
+const people = [will, bob, rich];
+console.log(people);
 
 
 
